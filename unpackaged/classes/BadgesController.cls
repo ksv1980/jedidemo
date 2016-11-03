@@ -38,6 +38,10 @@ public class BadgesController extends AgeUserController{
     return coreValues;
   }
 
+  public static List<String> wrapCoreValueTypes() {
+    return getCoreValueTypes();
+  }
+
   @RemoteAction
   public static List<String> getFocusTypes() {
     List<String> focuses = new List<String>(); 
